@@ -4,7 +4,10 @@
 
 In this blog post, we'll explore a practical implementation of Generative Reinforcement from Preference Optimization (GRPO), a technique inspired by DeepSeek's approach to training agents. We'll build and train a simple grid-world navigation agent to demonstrate how GRPO combines preference learning with reinforcement learning to create more effective policies.
 
-![Grid World Navigation Example](./images/grid_world.png)
+<p align="center">
+  <img src="./images/grid_world.png" alt="Grid World Navigation Example" width="300">
+</p>
+<!-- ![Grid World Navigation Example](./images/grid_world.png) -->
 
 GRPO represents an exciting advancement in reinforcement learning by addressing one of the field's persistent challenges: designing meaningful reward functions. By leveraging preferences between trajectories rather than just raw rewards, GRPO can learn more nuanced behaviors that align better with human preferences.
 
@@ -80,7 +83,10 @@ class PolicyNetwork(nn.Module):
         )
 ```
 
-![Network Architecture](./images/network_architecture.png)
+<p align="center">
+  <img src="./images/network_architecture.png" alt="Network Architecture" width="300">
+</p>
+<!-- ![Network Architecture](./images/network_architecture.png) -->
 
 ### GRPO Training Process
 
