@@ -84,14 +84,18 @@ class PolicyNetwork(nn.Module):
 
 ### GRPO Training Process
 
-![GRPO Training Process](./images/GRPO_training_process.png)
-
 The core of our implementation is the GRPO training process, which consists of the following steps:
 
 1. **Generate trajectory pairs**: Create pairs of trajectories where one is "preferred" over the other
 2. **Calculate policy gradient**: Use the preferred trajectories to update the policy
 3. **Update value function**: Train the value network to better estimate returns
 4. **Save the best model**: Keep track of the best-performing model based on evaluation returns
+
+<p align="center">
+  <img src="./images/GRPO_training_process.png" alt="GRPO Training Process" width="300">
+</p>
+
+<!-- ![GRPO Training Process](./images/GRPO_training_process.png,) -->
 
 Let's examine these components in detail:
 
